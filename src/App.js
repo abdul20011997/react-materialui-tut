@@ -1,6 +1,7 @@
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import CreatePage from "./createpage";
 import Mainpage from "./mainpage";
+import Layout from "./Layout";
 import {createTheme,ThemeProvider } from '@material-ui/core';
 const theme=createTheme({
   typography:{
@@ -17,11 +18,12 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
       <BrowserRouter>
+      <Layout>
       <Switch>
       <Route path="/create"><CreatePage/></Route>
       <Route path="/" exact><Mainpage/></Route>
       </Switch>
-
+      </Layout>
       </BrowserRouter>
       </ThemeProvider>
     </div>
