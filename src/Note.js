@@ -4,7 +4,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 export default function Note(props) {
     console.log(props)
     return (
-        <div>
+        <div style={{marginTop:'58px'}}>
             <Card elevation={1}>
                 <CardHeader action={<IconButton><DeleteIcon onClick={()=>props.deleteHandler(props.note.id)}/></IconButton>} title={props.note.title} subheader={props.note.category}/>
                 <CardContent>
