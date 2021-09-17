@@ -1,4 +1,4 @@
-import { AppBar, Drawer, makeStyles, Toolbar, Typography } from '@material-ui/core'
+import { AppBar, Drawer, makeStyles, Toolbar, Typography,Avatar } from '@material-ui/core'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -64,6 +64,8 @@ export default function Layout(props) {
                 <Toolbar >
                     <Typography className={classes.heading}> Hello Everyone!!</Typography>
                     <Typography> Abdul</Typography>
+                    <Avatar alt="Remy Sharp" src="/Mario.png"/>
+
                 </Toolbar>
             </AppBar>
             <Drawer className={classes.drawer} variant="permanent" anchor="left" classes={{
